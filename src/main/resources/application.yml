@@ -1,0 +1,21 @@
+spring: 
+  application: 
+    name: library-system
+  datasource:
+    url: jdbc:postgresql://localhost:5431/db
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update   # Use 'create' for fresh DB every time, 'update' for preserving data
+    show-sql: true       # Set to 'true' to log SQL queries in console
+    properties:
+      hibernate:
+        format_sql: true # Pretty print SQL queries
+
+  sql:
+    init:
+      mode: always       # Runs schema.sql and data.sql (if available)
