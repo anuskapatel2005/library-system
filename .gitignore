@@ -33,4 +33,7 @@ build/
 .vscode/
 /mvnw
 /mvnw.cmd
-/bin/
+/bin/*
+/mvn/*
+/metadata/*
+
